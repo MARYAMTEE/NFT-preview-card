@@ -5,6 +5,7 @@
     --blue-900: hsl(216, 50%, 16%);
     --blue-800: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
+    --transparent-cyan: rgba(0, 255, 247, 0.379);
 }
  *{
     margin: 0;
@@ -33,20 +34,49 @@
     width: 21rem;
     padding: 1.5rem;
     border-radius: 1rem;
-    display: grid;
-    place-items: center;
+    overflow: hidden;
+ }
+
+ .card__image-container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+ }
+
+ .card__image-container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 2;
+    pointer-events: none;
+ }
+
+ .card__image-container:hover::before{
+    background-color: var(--transparent-cyan);
+    background-image: url(./images/icon-view.svg);
  }
 
  .card__img{
     width: 18rem;
     height: 18rem;
     border-radius: 0.5rem;
+    display: block;
+    z-index: 1;
  }
 
  .card__title{
     color: var(--white);
-    font-weight: 600;
+    font-weight: 500;
     margin: 1.5rem 0 1rem;
+    cursor: pointer;
+ }
+
+ .card__title:hover{
+    color: var(--cyan-400);
  }
 
  .card__desc{
@@ -62,7 +92,7 @@
  }
 
  .card__icon{
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     font-size: 0.875rem;
  }
 
@@ -95,4 +125,8 @@
  .card__link{
     text-decoration: none;
     color: var(--white);
+ }
+
+ .card__link:hover{
+    color: var(--cyan-400);
  }
