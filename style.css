@@ -7,6 +7,7 @@
     --white: hsl(0, 0%, 100%);
     --transparent-cyan: rgba(0, 255, 247, 0.379);
 }
+
  *{
     margin: 0;
     padding: 0;
@@ -28,6 +29,8 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
  }
 
  .card{
