@@ -32,7 +32,7 @@
     background-color: var(--blue-900);
     width: 21rem;
     padding: 1.5rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     display: grid;
     place-items: center;
  }
@@ -46,11 +46,11 @@
  .card__title{
     color: var(--white);
     font-weight: 600;
-    margin: 1rem 0;
+    margin: 1.5rem 0 1rem;
  }
 
  .card__desc{
-    line-height: 1.7;
+    line-height: 1.6;
  }
 
  .card__list{
@@ -63,6 +63,7 @@
 
  .card__icon{
     margin-right: 0.5rem;
+    font-size: 0.875rem;
  }
 
  .card__item--colored{
@@ -81,7 +82,7 @@
  .card__user-image{
     width: 2.5rem;
     height: 2.5rem;
-    border: 2px solid var(--white);
+    border: 1px solid var(--white);
     border-radius: 50%;
  }
 
