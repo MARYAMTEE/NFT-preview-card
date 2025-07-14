@@ -33,7 +33,7 @@
 
  .card{
     background-color: var(--blue-900);
-    width: 21rem;
+    width: 22rem;
     padding: 1.5rem;
     border-radius: 1rem;
     overflow: hidden;
@@ -63,8 +63,8 @@
  }
 
  .card__img{
-    width: 18rem;
-    height: 18rem;
+    width: 19rem;
+    height: 19rem;
     border-radius: 0.5rem;
     display: block;
     z-index: 1;
@@ -112,8 +112,8 @@
 
  /* The Avatar image */
  .card__user-image{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     border: 1px solid var(--white);
     border-radius: 50%;
  }
