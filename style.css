@@ -72,9 +72,10 @@
 
  .card__title{
     color: var(--white);
-    font-weight: 500;
+    font-weight: 600;
     margin: 1.5rem 0 1rem;
     cursor: pointer;
+    font-size: 1.3rem;
  }
 
  .card__title:hover{
@@ -94,7 +95,7 @@
  }
 
  .card__icon{
-    margin-right: 0.3rem;
+    margin-inline-end: 0.3rem;
     font-size: 0.875rem;
  }
 
